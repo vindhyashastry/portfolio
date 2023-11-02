@@ -1,0 +1,216 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    
+        height:50px;
+        width:70%;
+       display: flex;
+        align-items: center;
+    
+     color: #E5E3E2 ;
+        justify-content:space-around;
+        position:fixed;
+        right: 0;
+        
+    
+
+}
+header a{
+    text-decoration: none;
+   font-family: 'Reem Kufi', sans-serif;
+   color:#8d8989;
+  
+   
+}
+header a:hover:not(:last-child){
+    color: #2f306b;
+}
+
+header a:not(:last-child){
+    text-decoration: none;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 20px;
+    color:#D3D3D3;
+    
+}
+header a:last-child {
+    height: 30px;
+    width: fit-content;
+    background-color:rgb(0, 66, 128);
+    border-radius: 10px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    
+background: rgba(147, 152, 255, 1.0);
+background: linear-gradient(135deg, rgba(147, 152, 255, 1.0), rgba(148, 232, 252, 1.0));
+    display: flex;
+    align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+*{
+    margin:0%;
+}
+.home img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.home h1{
+    
+font-family: 'Roboto', sans-serif;
+font-size: 50px;
+}
+.home h1 span{
+    letter-spacing: 5px;
+    background-image:linear-gradient(rgb(18, 32, 109),rgb(32, 30, 30));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+}
+.home h3{
+    font-family: reem kufi;
+    font-size: 20px;
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+   
+
+background: rgba(92, 203, 219, 1.0);
+background: linear-gradient(90deg, rgba(92, 203, 219, 1.0), rgba(106, 94, 216, 1.0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+   
+}
+.about h3{
+    font-family:serif;
+    color: rgba(20, 17, 219, 0.87);
+    
+   
+}
+.skill{
+    height: 100vh;
+    width: 100%;
+    background-color: #52a7c1;
+    background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skill .s1{
+   
+    height: 350px;
+    width: 250px;
+    position:absolute;
+    left: 10px;
+   box-shadow:3px 3px 10px #354649;
+    background-color:#145e80;
+    border-radius: 30px;
+
+    
+}
+.skill .s2{
+   
+    height: 350px;
+    width: 250px;
+    position:absolute;
+    left: 350px;
+   box-shadow:3px 3px 10px #354649;
+    background-color: #145e80;
+    border-radius: 30px;
+
+    
+}
+
+.skill .s3{
+   
+    height: 350px;
+    width: 250px;
+    position:absolute;
+    left: 700px;
+    box-shadow:3px 3px 10px #354649;
+    background-color: #145e80;
+    border-radius: 30px;
+
+    
+}
+.skill .s4{
+   
+    height: 350px;
+    width: 250px;
+    position:absolute;
+    left: 1050px;
+   box-shadow:3px 3px 10px #354649;
+    background-color: #145e80;
+    border-radius: 30px;
+
+    
+}
+.project{
+    height: 100vh;
+    width: 100%;
+    
+background: #C4C8FC;
+background: linear-gradient(90deg, #C4C8FC, #01829B);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    /* background-color:#A3C6C4; */
+    background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
+    display: flex;
+    align-items: center;
+   
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.resume{
+    height: 100vh;
+    width: 100%;
+    background-color: #5078f2;
+background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pro{
+height: 500px;
+width: 900px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+background-color: #E5E3E2;
+align-items: center;
+border-radius: 30px;
+box-shadow: 5px #8d8989 inset;
+
+
+
+}
+.pro h2{
+    color: #2f306b;
+}
+.pro a:hover{
+   transform: scale(1.5);
+}
