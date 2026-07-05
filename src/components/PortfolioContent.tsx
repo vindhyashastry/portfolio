@@ -240,7 +240,7 @@ export default function PortfolioContent() {
       title: "Smart India Hackathon",
       description:
         "as a team member, I worked on building an attendance system that cut a 15-minute process down to 30 seconds, using face recognition that had to work offline-first",
-      image: "/achieve/sih.jpeg",
+      image: "/achieve/SIH.jpeg",
       rotate: "-2deg",
     },
   ];
@@ -388,7 +388,7 @@ export default function PortfolioContent() {
             <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
               <div className="min-w-0">
                 <p className="font-mono text-xs uppercase tracking-[0.35em] text-blueprint">bangalore,india</p>
-                <h1 className="mt-4 font-serif text-4xl font-black leading-tight text-ink sm:text-5xl md:text-5xl">
+                <h1 className="mt-2 font-serif text-2xl sm:text-4xl md:text-5xl font-black leading-tight text-ink whitespace-nowrap">
                   Hi! I'm <span className="text-blueprint font-semibold">Vindhya M D</span>
                 </h1>
                 <p className="mt-3 font-mono text-xl font-semibold text-blueprint md:text-2xl text-shadow-amber-700">
