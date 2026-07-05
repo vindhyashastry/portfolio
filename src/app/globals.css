@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-blueprint: #5d86c0;
+  --color-blueprint-dim: rgba(93, 134, 192, 0.92);
+  --color-background: #040812;
+  --color-foreground: #e8edf5;
+  --color-muted-foreground: #8da0b8;
+  --color-line: rgba(76, 111, 152, 0.16);
+  --color-ink: #f5f7fb;
+  --color-orange: #f35b04;
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --animate-marquee: marquee 25s linear infinite;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :root {
+    --background: #040812;
+    --foreground: #e8edf5;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    /* Custom pen cursor */
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23f35b04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>') 2 21, auto;
+    /* Softer navy grid background */
+    background-image: linear-gradient(rgba(76, 111, 152, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(76, 111, 152, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: center top;
+    background-attachment: fixed;
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background-color: rgba(243, 91, 4, 0.3);
+    color: #f5f7fb;
+  }
 }
